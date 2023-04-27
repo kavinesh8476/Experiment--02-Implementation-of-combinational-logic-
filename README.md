@@ -33,13 +33,37 @@ F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 6.Give the respective inputs for timing diagram and obtain the results.
 ```
 ## Program:
+```
 /*
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 Developed by: Kavinesh M
 RegisterNumber:212222230064  
 */
-## RTL realization
-
+```
+## Using NAND:
+```
+   module combo1(a,b,c,d,f);
+   input a,b,c,d;
+   output f;
+   wire p,q,r;
+   assign p=(~c & b & a);
+   assign q=(~d & c & ~a);
+   assign r=(c & ~b & a);
+   assign f=(~(~p & ~q & ~r));
+   endmodule
+```
+## Using NOR:
+```
+module combo2(a,b,c,d,f);
+   input a,b,c,d;
+   output f;
+   wire p,q,r;
+   assign p=( c & ~b & a);
+   assign q=( d & ~c & a);
+   assign r=( c & ~b & a);
+   assign f=(~(~( p | q | r)));
+   endmodule
+```
 ## Output:
 ## Using NAND:
 ## RTL
