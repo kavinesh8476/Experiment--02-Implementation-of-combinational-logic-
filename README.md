@@ -41,7 +41,22 @@ RegisterNumber:212222230064
 ## RTL realization
 
 ## Output:
+## Using NAND:
 ## RTL
+![crtl1](https://user-images.githubusercontent.com/118466561/234770092-caafa17a-d126-46a8-903e-7c809829aff4.png)
 ## Timing Diagram
+![c1wf](https://user-images.githubusercontent.com/118466561/234770552-3123b328-c893-448a-8448-1e347a30f764.png)
+## Truth Table
+![image](https://user-images.githubusercontent.com/118466561/234770890-e6332bc7-f840-47fa-b2f1-c40654db6e95.png)
+## Using NOR:
+## RTL
+![crtl2](https://user-images.githubusercontent.com/118466561/234771558-2da86a3a-1da2-4609-81ab-9deb71b4ad22.png)
+
+## Timing Diagram
+![c2wf](https://user-images.githubusercontent.com/118466561/234771592-3bdac7b4-9f1c-4053-ae80-e0dbe6e1b251.png)
+
+## Truth Table
+![image](https://user-images.githubusercontent.com/118466561/234771646-e13a292e-57ad-40bc-8307-d7029fd80548.png)
+
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
